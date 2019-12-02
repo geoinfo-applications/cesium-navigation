@@ -1,0 +1,6 @@
+{
+  "CESIUM_COMPASS": {
+    "COMPASS": "Rotation: am äusseren Ring ziehen \nVerkippung: inneren Gyroskop ziehen \nKamera zurücksetzen: Doppelklick auf Gyroskop",
+    "COMPASS_OUTER_RING": "Kamera rotieren"
+  }
+}

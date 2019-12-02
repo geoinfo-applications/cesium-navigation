@@ -1,42 +1,70 @@
 {
-    "name": "cesium-navigation",
-    "version": "1.1.2",
-    "description": "Cesium plugin that adds a compass, navigator, and distance scale to the map",
-    "main": "viewerCesiumNavigationMixin",
-    "dependencies": {
-        "bower": "*"
-    },
-    "devDependencies": {
-        "fs-extra": "^0.26.5",
-        "csso": "^1.5.4",
-        "less": "^1.7.5",
-        "node-minify": "^1.3.7",
-        "express": "~4.9.x",
-        "compression": "1.0.8",
-        "yargs": "1.2.6",
-        "requirejs": "^2.1.22",
-        "cesium": "^1.20.0"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "postinstall": "bower install"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/alberto-acevedo/cesium-navigation.git"
-    },
-    "keywords": [
-        "cesium",
-        "navigation",
-        "compass",
-        "navigator",
-        "distance",
-        "scale"
-    ],
-    "author": "alberto acevedo",
-    "license": "Apache-2.0",
-    "bugs": {
-        "url": "https://github.com/alberto-acevedo/cesium-navigation/issues"
-    },
-    "homepage": "https://github.com/alberto-acevedo/cesium-navigation#readme"
+  "name": "@geoinfo/cesium-navigation",
+  "version": "1.0.0",
+  "description": "AngularJS, standalone Cesium navigation compass",
+  "main": "module.js",
+  "scripts": {
+    "test": "grunt test",
+    "prod": "npm run clean && SET NODE_ENV=production&&webpack -p",
+    "clean": "rimraf ./dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geoinfo-applications/cesium-navigation.git"
+  },
+  "author": "alberto acevedo (https://github.com/alberto-acevedo)",
+  "contributors": [
+    "GEOINFO Applications AG (https://github.com/geoinfo-applications)"
+  ],
+  "license": "Apache-2.0",
+  "private": false,
+  "engines": {
+    "node": "^4.0.0",
+    "npm": ">2.7.0"
+  },
+  "engineStrict": true,
+  "devDependencies": {
+    "@types/angular": "^1.6.57",
+    "@types/cesium": "^1.59.2",
+    "@types/node": "^12.12.14",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
+    "angular": "^1.7.5",
+    "angular-translate": "^2.18.1",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-angularjs-annotate": "^0.9.0",
+    "babel-preset-env": "^1.7.0",
+    "cesium": "^1.63.1",
+    "css-loader": "^3.2.1",
+    "extract-css-chunks-webpack-plugin": "^4.7.1",
+    "grunt": "^1.0.4",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-eslint": "^22.0.0",
+    "grunt-exec": "^3.0.0",
+    "grunt-release": "^0.14.0",
+    "grunt-todo": "^0.5.0",
+    "grunt-tslint": "^5.0.2",
+    "grunt-webpack": "^3.1.3",
+    "load-grunt-tasks": "^5.1.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "stylus": "^0.54.7",
+    "stylus-relative-loader": "https://github.com/SirKlaus/stylus-relative-loader.git",
+    "time-grunt": "^2.0.0",
+    "ts-loader": "^5.3.2",
+    "tslint": "^5.12.0",
+    "typescript": "^3.5.3",
+    "underscore": "^1.9.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "keywords": [
+    "cesium",
+    "navigation",
+    "compass",
+    "navigator"
+  ]
 }
