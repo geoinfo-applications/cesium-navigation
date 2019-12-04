@@ -1,7 +1,7 @@
 "use strict";
 
 import cesium from "cesium";
-import { module } from "angular";
+import angular from "angular";
 
 import "./cesiumCompass.styl";
 import template from "./cesiumCompass.pug";
@@ -350,7 +350,7 @@ export default class CesiumCompass {
 
 }
 
-module("cesium-navigation").component("cesiumCompass", {
+angular.module("cesium-navigation").component("cesiumCompass", {
     template: template(),
     controller: CesiumCompass,
     bindings: {

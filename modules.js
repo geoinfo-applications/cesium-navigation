@@ -1,3 +1,4 @@
 "use strict";
 
-import "./dist/cesiumCompass.js";
+import "./dist/app.js";
+import "./dist/app.css";

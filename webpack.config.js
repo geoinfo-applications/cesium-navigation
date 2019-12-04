@@ -21,11 +21,12 @@ function getExtractTextPlugin() {
 
 const webpackConfig = {
     entry: {
-        cesiumNavigation: ["./src/cesiumCompass/cesiumCompass.ts", "./src/app.ts"]
+        app: ["./src/app.ts"]
     },
     output: {
         path: path.resolve(__dirname, "dist/"),
-        filename: "[name].js"
+        filename: "[name].js",
+        libraryTarget: "umd"
     },
     module: {
         rules: [
@@ -69,16 +70,8 @@ const webpackConfig = {
         ]
     },
 
-    optimization: {
-        splitChunks: {
-            cacheGroups: {
-                vendor: {
-                    test: /[\\/]angular[\\/]/,
-                    name: "vendor",
-                    chunks: "initial"
-                }
-            }
-        }
+    externals: {
+        angular: "angular"
     },
 
     resolve: {
