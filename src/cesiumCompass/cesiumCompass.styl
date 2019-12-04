@@ -1,0 +1,75 @@
+body
+  cesium-compass
+    compassDiameter = 95px
+    compassRingWidth = compassDiameter * 20 / 145
+    compassGyroDiameter = compassDiameter * 50 / 145
+    whiteBackground = rgba(255, 255, 255, 0.8)
+    redBackground = rgba(210, 10, 17, 0.75)
+
+    .compass
+      position absolute
+      top 15px
+      right 15px
+      width compassDiameter
+      height compassDiameter
+      overflow hidden
+
+      .compass-svg
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        overflow hidden
+
+      .compass-outer-ring
+        position absolute
+        top 0
+        width compassDiameter
+        height compassDiameter
+        fill #AC0000
+
+      .compass-outer-ring-background
+        position absolute
+        top 14px
+        left 14px
+        width 44px
+        height 44px
+        border-radius 44px
+        border 12px solid whiteBackground
+        box-sizing content-box
+
+      .compass-gyro
+        pointer-events none
+        position absolute
+        top 0
+        width compassDiameter
+        height compassDiameter
+        fill #FFFFFF
+
+      .compass-gyro-active
+        fill #CCCCCC
+
+      .compass-gyro-background
+        position absolute
+        top 30px
+        left 30px
+        width 33px
+        height 33px
+        border-radius 33px
+        background-color redBackground
+        border 1px solid redBackground
+        box-sizing content-box
+
+      .compass-gyro-background:hover + .compass-gyro
+        fill #6A6A6A
+
+      .compass-orbit-marker
+        position absolute
+        top 0
+        width compassDiameter
+        height compassDiameter
+        fill #333333
+
+      .compass-active
+        pointer-events none

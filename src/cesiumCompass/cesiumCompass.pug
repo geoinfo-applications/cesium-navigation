@@ -1,0 +1,13 @@
+.compass(ng-if="$ctrl.isActive" title="{{ 'CESIUM_COMPASS.COMPASS' | translate }}" ng-class="{ 'compass-active': $ctrl.isOrbiting || $ctrl.isRotating}"
+    ng-mousedown="$ctrl.handleMouseDown($event)" ng-dblclick="$ctrl.handleDoubleClick($event)")
+    .compass-outer-ring-background
+    .compass-orbit-marker(ng-if="$ctrl.isOrbiting")
+        svg.compass-svg(viewBox="0 0 145 145")
+            path(ng-attr-d="{{ $ctrl.svgCompassRotationMarker }}")
+    .compass-outer-ring(title="{{ 'CESIUM_COMPASS.COMPASS_OUTER_RING' | translate }}")
+        svg.compass-svg(viewBox="0 0 145 145")
+            path(ng-attr-d="{{ $ctrl.svgCompassOuterRing }}")
+    .compass-gyro-background
+    .compass-gyro(ng-class="{ 'compass-gyro-active': $ctrl.isOrbiting }")
+        svg.compass-svg(viewBox="0 0 145 145")
+            path(ng-attr-d="{{ $ctrl.svgCompassGyro }}")
