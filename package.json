@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/geoinfo-applications/cesium-navigation.git"
+    "url": "git+https://github.com/geoinfo-applications/cesium-navigation.git"
   },
   "author": "alberto acevedo (https://github.com/alberto-acevedo)",
   "contributors": [
@@ -52,7 +52,7 @@
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "stylus": "^0.54.7",
-    "stylus-relative-loader": "https://github.com/SirKlaus/stylus-relative-loader.git",
+    "stylus-relative-loader": "git+https://github.com/SirKlaus/stylus-relative-loader.git",
     "time-grunt": "^2.0.0",
     "ts-loader": "^5.3.2",
     "tslint": "^5.12.0",
@@ -66,5 +66,10 @@
     "navigation",
     "compass",
     "navigator"
-  ]
+  ],
+  "homepage": "https://github.com/geoinfo-applications/cesium-navigation#readme",
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/geoinfo-applications/cesium-navigation/issues"
+  }
 }
