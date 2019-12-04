@@ -2,7 +2,7 @@
   "name": "@geoinfo/cesium-navigation",
   "version": "1.0.0",
   "description": "AngularJS, standalone Cesium navigation compass",
-  "main": "module.js",
+  "main": "modules.js",
   "scripts": {
     "test": "grunt test",
     "prod": "npm run clean && SET NODE_ENV=production&&webpack -p",
