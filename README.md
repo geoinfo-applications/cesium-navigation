@@ -1,7 +1,7 @@
 ## cesium-navigation
-This is a AngularJS, standalone version of [Alberto's cesium-navigation](https://github.com/alberto-acevedo/cesium-navigation)
+This is an AngularJS, standalone version of [Alberto's cesium-navigation](https://github.com/alberto-acevedo/cesium-navigation)
 that adds a user friendly compass to your Cesium app without the use of Viewer
-(e.q. when you're using [ol-cesium](https://github.com/openlayers/ol-cesium)).
+(e.g. when you're using [ol-cesium](https://github.com/openlayers/ol-cesium)).
 
 ## Getting Started
 
